@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 # E-Commerce Admin Backend API
 
 A REST API for managing an e-commerce admin panel.
+=======
+
+
+# E-Commerce Admin Backend API
+
+A simple REST API for managing an e-commerce admin panel.
+>>>>>>> 2099aaeb2f27555558830a213f37ddf7d5ddb0e0
 
 ## Tech Stack
 
@@ -40,4 +48,8 @@ Ecommerce_admin/
 │
 ├── ecommerce.db
 ├── requirements.txt
+<<<<<<< HEAD
 └── README.md
+=======
+└── README.md
+>>>>>>> 2099aaeb2f27555558830a213f37ddf7d5ddb0e0
