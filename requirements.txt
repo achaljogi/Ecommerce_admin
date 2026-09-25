@@ -1,0 +1,7 @@
+
+ FastAPI
+ SQLAlchemy
+ SQLite
+ Pydantic
+ JWT Authentication
+ Swagger / OpenAPI
