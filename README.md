@@ -1,8 +1,6 @@
---------- Ecommerce Admin Panel -----------
-
 # E-Commerce Admin Backend API
 
-A simple REST API for managing an e-commerce admin panel.
+A REST API for managing an e-commerce admin panel.
 
 ## Tech Stack
 

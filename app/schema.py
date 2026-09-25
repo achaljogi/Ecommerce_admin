@@ -1,23 +1,16 @@
 from pydantic import BaseModel, ConfigDict, Field
 
-
-# =========================
 # AUTH
-# =========================
 
 class LoginRequest(BaseModel):
     username: str
     password: str
 
-
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str
 
-
-# =========================
 # BRAND
-# =========================
 
 class BrandBase(BaseModel):
     name: str
@@ -45,9 +38,7 @@ class BrandResponse(BrandBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-# =========================
 # CATEGORY
-# =========================
 
 class CategoryBase(BaseModel):
     name: str
@@ -56,10 +47,8 @@ class CategoryBase(BaseModel):
     image_url: str | None = None
     is_active: bool = True
 
-
 class CategoryCreate(CategoryBase):
     pass
-
 
 class CategoryUpdate(BaseModel):
     name: str | None = None
@@ -75,9 +64,7 @@ class CategoryResponse(CategoryBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-# =========================
 # SUBCATEGORY
-# =========================
 
 class SubCategoryBase(BaseModel):
     name: str
@@ -107,9 +94,7 @@ class SubCategoryResponse(SubCategoryBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-# =========================
 # PRODUCT
-# =========================
 
 class ProductBase(BaseModel):
     name: str
@@ -147,9 +132,7 @@ class ProductResponse(ProductBase):
     model_config = ConfigDict(from_attributes=True)
 
 
-# =========================
 # PRODUCT VARIANT
-# =========================
 
 class VariantBase(BaseModel):
     product_id: int

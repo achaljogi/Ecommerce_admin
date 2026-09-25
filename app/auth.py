@@ -9,7 +9,7 @@ SECRET_KEY = "my-secret-key-change-this"
 ALGORITHM = "HS256"
 
 ADMIN_USERNAME = "admin"
-ADMIN_PASSWORD = "admin123"
+ADMIN_PASSWORD = "admin@123"
 
 
 security = HTTPBearer()
